@@ -1,3 +1,4 @@
+
 :root{
     font-family:"Red Hat Display" , sans-serif;
     /* Primary Colors */
@@ -10,39 +11,72 @@
     /*Anchor Color*/
     --a-color:hsl(228,45%,44%);
 }
-body {
-    margin:0;
-    padding:0;
+body{
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    background-color: var(--Pale-blue);
+    background-color: rgb(247, 246, 217);
 }
-.payment-card {
-    margin: 0 auto;
-    margin-top: 70px;
-    width: 88%;
+
+h1{
+    text-align: center;
+}
+.main{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+.componentes{
+    display: flex;
+    flex-direction: row;
+}
+button{
+    background-color: rgb(189, 103, 146);
+    border: 1px solid rgb(224, 255, 183);
+    color: rgb(224, 255, 183);
+    height: 32px;
+    border-radius: 5px;
+    margin-bottom: 32px;
+}
+button:hover{
+    background-color:wheat;
+    color: white;
+    cursor: pointer;
+}
+.card{
+    max-width: 300px;
+    border-width: 3px;
+    border-radius: 20px;
+    margin-bottom: 32px;
     overflow: hidden;
     border-radius: 20px;
     background-color: white;
 }
-
-.payment-card header img{
-    height: 148%;
+.illustration-hero{
     width: 100%;
 }
-main {
+.illustration-hero img{
+    width: 100%;
+   
+}
+.titulo{
+    color: var(--Dark-blue);
+    line-height: 24px;
+    font-family: "Red Hat Display", sans-serif;
     text-align: center;
-}
-main h1 {
     font-weight: 900;
+    font-size: 20px;
 }
-main p {
+.description{
     margin: 0 24px 24px 24px;
     color: var(--Desaturated-blue);
     font-weight: 500;
     line-height: 24px;
+    text-align: center;
+    font-size: 15px;
 }
-
-.plan{
+.partes{
     display:flex;
     justify-content: space-around;
     align-content: center;
@@ -51,8 +85,7 @@ main p {
     border-radius: 12px;
     background-color: var(--Very-pale-blue);
 }
-
-.plan:nth-child(3) {
+.partes:nth-child(3) {
     color: var(--a-color);
     font-weight: 900;
     align-items: center;
@@ -70,20 +103,21 @@ main p {
     display: flex;
     flex-direction: column;
     padding: 0 24px 24px 24px;
-  }
-  .button-container > button {
+    }
+    .button-container > button {
     font-family: "Red Hat Display", sans-serif;
     height: 48px;
     border-radius: 12px;
     margin-bottom: 4px;
     border: none;
     font-weight: 900;
-  }
-  .button-container__payment {
+    }
+    .button-container__payment {
     background-color: var(--Bright-blue);
     color: var(--Very-pale-blue);
-  }
-  .button-container__cancel {
+    box-shadow: 0px 7px 4px 0px #e4e1fa;
+    }
+    .button-container__cancel {
     background-color: var(--Very-pale-blue);
     color: var(--Desaturated-blue);
-  }
+    }
